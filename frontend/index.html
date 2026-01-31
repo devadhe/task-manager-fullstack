@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Manager Pro</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="app">
+
+    <div class="top-bar">
+  <h1>🚀 Task Manager Pro</h1>
+  <button id="themeBtn">🌙</button>
+</div>
+
+    <p class="subtitle">Manage your daily tasks smartly</p>
+
+    <!-- Form -->
+    <form id="taskForm" class="task-form">
+
+      <input type="text" id="title" placeholder="Task Title" required>
+
+      <input type="text" id="description" placeholder="Description">
+
+      <select id="status">
+        <option value="Pending">Pending</option>
+        <option value="Completed">Completed</option>
+      </select>
+
+      <button>Add Task</button>
+
+    </form>
+
+    <!-- Task List -->
+    <div id="taskList" class="task-list"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
